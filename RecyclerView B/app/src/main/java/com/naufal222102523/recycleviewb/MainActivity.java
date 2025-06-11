@@ -79,7 +79,6 @@ public class MainActivity extends AppCompatActivity {
 
         for (MahasiswaModel item: mahasiswaModelList){
             if (item.getNama().toLowerCase().contains(text.toLowerCase())){
-                    //Toast.makeText(MainActivity.this, "test", Toast.LENGTH_SHORT).show();
                 filteredList.add(item);
             }
         }
@@ -119,6 +118,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void initAddButton(){
         _addButton = findViewById(R.id.addButton);
+
         _addButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
